@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Oasis Discord Server</a>
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h1>Discord Links </h1>
+                <h3>Vanity Link</h3>
+                <h4>(If this redirects you to a server that asks you to verify through 3rd party</h4>
+                <h4>ways, please refer to the backup links)</h4>
+                <div class="btn-box">
+                    <a href="https://discord.com/invite/takus-oasis" class="glassy-button"><span>discord.gg/takus-oasis</span></a>
+                </div>
+                <h3>Backup Links</h3>
+                <div class="btn-box">
+                    <a href="https://discord.com/invite/JUwv57g" class="glassy-button"><span>discord.gg/JUwv57g</span></a>
+                    <a href="https://discord.com/invite/J9xUU9dTMb" class="glassy-button"><span>discord.gg/J9xUU9dTMb</span></a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const glassyButtons = document.querySelectorAll(".glassy-button");
+            glassyButtons.forEach((button) => {
+                button.addEventListener("mousemove", (event) => {
+                    const centerX = button.offsetWidth / 2;
+                    const centerY = button.offsetHeight / 2;
+
+                    const offsetX = event.offsetX - centerX;
+                    const offsetY = event.offsetY - centerY;
+
+                    button.style.setProperty("--_x-motion", ${offsetX}px);
+                    button.style.setProperty("--_y-motion", ${offsetY}px);
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 # Discord links : 
 
 
-## VANITY LINK :
+## VANITY LINK : (if this redirects you to a suspicious server or anything that forces you to use external ways to verify, use backup links instead)
 - [discord.gg/takus-oasis](https://discord.com/invite/takus-oasis)
 
 
